@@ -1,0 +1,35 @@
+<div class="ContactPage">
+
+  <div class="ContactPageImageContainer">
+    <img [src]="ContactImageUrl" alt="ContactImageUrl" class="ContactPageImage">
+  </div>
+
+  <div class="ContactPageImageContainerContentColumn">
+    <div class="ContactUsContent">
+      {{'Contact us'|translate}}
+    </div>
+
+    <button class="CallUsContainer" (click)="CallPhone()">
+      <div class="CallUsContainerContent ContentFontSize">
+        {{'Call us'|translate}}
+      </div>
+
+    </button>
+
+    <button class="CallUsContainer" (click)="sendEmail()">
+      <div class="CallUsContainerContent ContentFontSize">
+        {{'FewoClean4U@gmail.com'|translate}}
+      </div>
+    </button>
+
+    <button class="CallUsContainer" (click)="sendEmail()">
+      <mat-icon class="FaceBookIcon">facebook</mat-icon>
+      <div class="CallUsContainerContent ContentFontSize">
+        {{'Facebook'|translate}}
+      </div>
+
+    </button>
+
+  </div>
+
+</div>

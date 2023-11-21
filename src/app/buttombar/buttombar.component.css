@@ -1,0 +1,347 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: "FjallaOne-Regular";
+  src: url("../../assets/Fonts/FjallaOne-Regular.ttf");
+}
+
+
+
+@media (max-width: 576px) {
+
+  .ImageContainer{
+
+    height: 170em;
+    }
+    .CardSizer
+  {
+    width: 20em;
+    height:30em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:14em;
+
+  }
+  .AreaImageSizer{
+    width: 20em;
+    height: 20em;
+  }
+  .logoImage
+  {
+    height: 18em;
+    width:  18em;
+  }
+
+ }
+ @media (max-width: 400px) {
+
+  .ImageContainer{
+
+    height: 180em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:12em;
+
+  }
+  .AreaImageSizer{
+    width: 15em;
+    height: 15em;
+  }
+  .logoImage
+  {
+    height: 15em;
+    width:  15em;
+  }
+
+ }
+ @media (max-width: 320px) {
+
+  .ImageContainer{
+
+    height: 200em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:10em;
+
+  }
+  .AreaImageSizer{
+    width: 10em;
+    height: 10em;
+    /* border-left: 3px solid whitesmoke; */
+  }
+  .logoImage
+  {
+    height: 12em;
+    width:  12em;
+  }
+
+}
+@media (min-width: 576px) {
+
+  .ImageContainer{
+
+    height: 130em;
+    }
+    .CardSizer
+    {
+      width: 23em;
+      height: 32em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:20em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .logoImage
+    {
+      height: 18em;
+      width:  18em;
+    }
+ }
+
+
+@media (min-width: 768px) {
+  .ImageContainer{
+
+    height: 110em;
+    }
+    .CardSizer
+    {
+      width: 25em;
+      height: 35em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:30em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .logoImage
+    {
+      height: 22em;
+      width:  22em;
+    }
+ }
+
+
+@media (min-width: 992px) {
+
+  .ImageContainer{
+
+    height: 100em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:40em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .logoImage
+    {
+      height: 22em;
+      width:  22em;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+  .ImageContainer{
+
+    height: 90em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:50em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .logoImage
+    {
+      height: 22em;
+      width:  22em;
+    }
+ }
+
+
+@media (min-width: 1400px) {
+  .ImageContainer{
+
+    height: 80em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+      {
+
+      height:50em;
+
+      }
+      .AreaImageSizer{
+        width: 25em;
+        height: 25em;
+      }
+      .logoImage
+      {
+        height: 22em;
+        width:  22em;
+      }
+ }
+
+
+
+.OutroRow
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+}
+
+
+footer {
+  background-color: #2A66B0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: whitesmoke;
+  border-top: 3px solid #FF914D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.colOutro
+{
+  color: #2A66B0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.rowOutro
+{
+  color: #2A66B0;
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.OutroContainer
+{
+  /* background-color: #FF914D; */
+  /* margin-top: 5% ; */
+  text-align: center;
+  width: 30em;
+  height: fit-content;
+  font-family: "FjallaOne-Regular";
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #2A66B0;
+}
+.ListContainer
+{
+/* background-color: #FF914D; */
+  margin-top: 1em;
+  width: fit-content;
+  height: fit-content;
+  font-family: "FjallaOne-Regular";
+  font-size: 2em;
+  color: #2A66B0;
+}
+.col-title
+{
+
+ width:6em ;
+}
+.col-title-text{
+
+  font-weight:bold;
+  font-size: .7em;
+  padding-bottom: 1em;
+  color: #8BC53F;
+}
+.col-title-value {
+  line-height: 1.5;
+  background-color: whitesmoke;
+  font-weight: lighter;
+  font-size: .7em;
+  text-align:center;
+
+  /* padding-top: 5px; */
+  padding-bottom: 1em;
+}
+.col-title-value-button {
+  background-color: whitesmoke;
+  font-size: .7em;
+  font-weight: lighter;
+  border: none;
+  color: #2A66B0;
+  line-height: 1.4;
+  /* padding-top: 5px; */
+  margin-bottom: .5em;
+}
+.col-title-value-button:hover {
+  background-color: whitesmoke;
+  font-size: .7em;
+  line-height: 1.4;
+  font-weight: lighter;
+  border: none;
+  color: #FF914D;
+  /* padding-top: 5px; */
+  margin-bottom: .5em;
+}

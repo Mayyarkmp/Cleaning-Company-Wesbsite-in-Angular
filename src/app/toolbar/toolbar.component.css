@@ -1,0 +1,285 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: "FjallaOne-Regular";
+  src: url("../../assets/Fonts/FjallaOne-Regular.ttf");
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+.toolbar{
+
+  background-color: whitesmoke;
+  /* width: 100%; */
+  border-bottom: 3px solid #FF914D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #2A66B0;
+  height: 240px;
+}
+.toolbarSmall
+{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  border-bottom: 3px solid #FF914D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #2A66B0;
+  height: 100px;
+}
+.logo-img
+{
+  height: 250px;
+  width: 250px;
+}
+.logo-imgSmall
+{
+  transform: translateY(-25px);
+  height: 100px;
+  width: 100px;
+}
+.toolbarButton{
+  background-color: transparent;
+  border: none;
+  color: #2A66B0;
+  margin: 2%;
+  text-decoration: none;
+  font-family: "FjallaOne-Regular";
+  font-size: xx-large;
+  font-weight: 500;
+}
+.toolbarButton:hover{
+
+  /* background-color: #8BC53F; */
+  color: #FF914D;
+  text-decoration: none;
+  font-family: "FjallaOne-Regular";
+  font-size: xx-large;
+  font-weight: 500;
+}
+.SerivcesSpeicalContainer
+{
+  position: relative;
+}
+.LanguageSelect
+{
+  border: none;
+  /* margin-right: 2%;
+  margin-left: 2%; */
+  background-color:transparent;
+  color: #2A66B0;
+  font-family: "FjallaOne-Regular";
+  width: 50px;
+}
+.LanguageIconSize{
+ width: 10;
+}
+.LanguageIconSize:hover{
+  color: #8BC53F;
+  width: 10;
+ }
+.SelectedLanguageOption
+{
+  border:1px solid #2A66B0;
+
+  width: 50px;
+}
+.SelectedLanguageOptionButton
+{
+  border: none;
+  font-family: "FjallaOne-Regular";
+  text-align: center;
+  background-color: transparent;
+  color: #2A66B0;
+}
+.SelectedLanguageOptionButton:hover
+{
+  border: none;
+
+  text-align: center;
+  font-family: "FjallaOne-Regular";
+  background-color: transparent;
+  color: #8BC53F;
+}
+.mat-menu-panel {
+  border: 1px solid #2A66B0;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-decoration-break: clone;
+  padding: 20px;
+  transform: translateX(-25%);
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 1000;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+
+  color:#2A66B0;
+}
+.mat-menu-panel:hover {
+  border: 1px solid #2A66B0;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-decoration-break: clone;
+  padding: 20px;
+  transform: translateX(-25%);
+  /* opacity: .9; */
+  position: absolute;
+  z-index: 1000;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+
+  background-color: whitesmoke;
+  color: #2A66B0;
+}
+.mat-menu-panel-header
+{
+  border: none;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+  font-size: large;
+  color:
+  #2A66B0;
+}
+.mat-menu-panel-header:hover
+{
+  border: none;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+  font-size: large;
+  color:#FF914D;
+}
+.mat-menu-panel-button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+  font-size: medium;
+  color:#2A66B0;
+}
+.mat-menu-panel-button:hover {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+  font-size: medium;
+  color:#FF914D;
+}
+.subMenuPanelOption{
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  flex: 1;
+  font-family: "FjallaOne-Regular";
+  font-size: medium;
+  color:#2A66B0;
+}
+.divider{
+  border-top: 1px solid #8BC53F;
+  width: 105%;
+}
+
+.menuBarSmall
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+   border: 1px solid #2A66B0;
+  /* border-radius: 20px; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-decoration-break: clone;
+  padding: 20px;
+  width:100vw;
+
+}
+.menuBarSmallColumn
+{
+  text-align: center;
+  background-color: transparent;
+  text-align: center;
+  color: #2A66B0;
+  margin: 2%;
+  width: fit-content;
+}
+.menuabarItemSmall
+{
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+ background-color: transparent;
+  font-family: "FjallaOne-Regular";
+  font-size: x-large;
+  color:#2A66B0;
+  width: 100%;
+}
+.menuabarItemSmall:hover
+{
+
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  background-color: whitesmoke;
+  background-blend-mode:exclusion;
+  font-family: "FjallaOne-Regular";
+  font-size: x-large;
+  color:#8BC53F;
+  width: 100%;
+}
+.menuabarItemSmallRow
+{
+padding-top: 1%;
+padding-bottom: 1%;
+}
+.menuabarItemSmallRow:hover
+{
+padding-top: 1%;
+padding-bottom: 1%;
+}
+.menuDivider
+{
+  margin: 2px;
+  border-top: 1px solid #2A66B0;
+}
+.menuBarToggleButton{
+  color: #2A66B0;
+}
+.menuBarToggleButton:hover{
+  color: #8BC53F;
+}
+.ImageButton {
+  background-color: transparent;
+  border: none;
+}
+
+.toolBarRow
+{
+  background-color: #2A66B0;
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+

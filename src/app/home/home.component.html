@@ -1,0 +1,140 @@
+<div class="WholePage">
+  <div class="ImageContainer ImageContainerBackgroundColor">
+    <img [src]="homeImageUrl" [alt]="homeImageUrl" class="Image">
+  </div>
+
+  <div class="ImageTextContainer ImageContainer" [@fadeInAnimation]>
+
+    <div class="HomePageImageOverTextTitle">
+      {{'Entro-1'|translate}}
+      </div>
+
+      <div class="HomePageImageOverTextNormal">
+      {{'Entro-2'|translate}}
+      </div>
+
+      <div class="HomePageImageOverTextTitle">
+      {{'Entro-3'|translate}}
+      </div>
+
+      <div class="HomePageImageOverTextNormal">
+    {{'Entro-4'|translate}}
+      </div>
+
+      <div class="HomePageImageOverTextNormal">
+      {{'Entro-5'|translate}}
+      </div>
+
+      <div class="HomePageImageOverTextNormal">
+      {{'Entro-6'|translate}}
+      </div>
+
+    <div class="HomePageImageOverTextNormal">
+      {{'Entro-7'|translate}}
+    </div>
+
+    <div class="HomePageImageCallUs" >
+    {{'Call us' |translate}}
+    </div>
+
+
+  </div>
+
+  <div class="Dividercontainer"[@fadeInAnimation]>{{'SerivcesIntro3'|translate}}</div>
+
+
+  <div class="rowX">
+    <div class="move-card CardSizer" *ngFor="let card of Cards">
+      <div class="card-darkner CardSizer">
+
+
+        <div class="image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <div class="bottom-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <img [src]="card.ImageUrl" class="bottom-image CardSizer"  alt="Stacked Image" (mouseenter)="isHovered = true ;" (mouseleave)="card.CardisHovered = false;" >
+          <div class="card-title" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false " [@fadeOutAnimation]="card.CardisHovered ? 'leave' : 'void'"  >{{card.title |translate}}</div>
+          </div>
+          <div class="top-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <img [src]="card.ImageUrl" class="top-image CardSizer" alt="Card image cap" [@CardAnimation]="card.CardisHovered ?'hover':'void'" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <div class="card-text-content" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false "[@CardTextAnimation]="card.CardisHovered ? 'hover' : 'void'">
+            {{card.content|translate}}
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class = "Offers" >
+    <div class="LogoCicle">
+      <img [src]="imageUrlSmall" class="logoImage" alt="Sample Image">
+      </div>
+      <div class="OfferContainerTitle"[@fadeInAnimation]>{{'OFFERS'|translate}}</div>
+      <div class="OfferContainerContent text-break" [@fadeInAnimation]>
+      {{'OFFERSCONTENT' | translate}}
+      </div>
+    <div class="EmailContainer" [@fadeInAnimation]>
+      FeWo-Clean4U.com
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="card">
+    <p-carousel [value]="CarouselCard" [numVisible]="1" [numScroll]="1" [circular]="true">
+      <ng-template pTemplate="header" >
+        <div class="carouselHeader" [@fadeInAnimation]>{{'FEWOGALLARY'|translate}}</div>
+        </ng-template>
+        <ng-template let-Card pTemplate="item">
+            <div class="product-item">
+                <div class="product-item-content">
+                    <div class="mb-3">
+                        <img [src] ="Card.ImageUrl" [@fadeInAnimation]  [alt]="Card.ImageUrl" class="product-image carouselImage carouselContainerImageSizer" />
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+    </p-carousel>
+  </div>
+
+
+
+  <div class="AreaContainer" >
+
+    <div class="AreaRowContent">
+      <img [src]="LocationImageUrl" class="AreaImage AreaImageSizer" alt="LocationImage"/>
+    <div class="AreaColumnContent">
+      <div class="AeraAreaColumnContentTitle" [@fadeInAnimation]>
+      {{'AREAPLACE'|translate}}
+      </div>
+      <div class="AeraAreaColumnContentDetailes" [@fadeInAnimation]>
+        <mat-icon class="CallIcon" size="15vw">phone</mat-icon>
+        {{'PHONENUMBERS'|translate}}
+      </div>
+      <div class="AeraAreaColumnContentHoursOfOperation" [@fadeInAnimation]>
+        {{'HOURSOFOPERATION'|translate}}
+      </div>
+      <div class="AeraAreaColumnContentDetailes [@fadeInAnimation]">
+        <mat-icon class="CallIcon" size="15vw">timer</mat-icon>
+        7/24
+      </div>
+
+    </div>
+
+    <div class = "AreaTitle" [@fadeInAnimation]>
+
+      {{'AREAS'|translate}}
+    </div>
+    </div>
+
+
+
+  </div>
+
+
+  </div>

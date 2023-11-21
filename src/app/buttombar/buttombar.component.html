@@ -1,0 +1,69 @@
+<footer>
+  <div class="OutroRow">
+
+  <img [src]=LogoImageUrl  class="logoImage logoImageSizer" alt="logoImage">
+
+  <div class="OutroContainer">
+    {{'OUTRO' | translate}}
+  </div>
+
+  <div class="ListContainer">
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col col-title" *ngFor="let Title of buttomBarButtonsTitles | keyvalue ; let i = index ;">
+          <div class="col-title-text">{{Title.value  |translate}}</div>
+
+        <div *ngFor="let col of AvaialbleButtomBar |keyvalue ; let j = index ;">
+          <div *ngFor="let colvalue of col.value |keyvalue ; let k = index ;">
+            <div *ngIf="i === j && (i ==2 || i ==3) " class="col-title-value">
+              {{colvalue.value |translate}}
+            </div>
+            <button *ngIf="i === j && (i ==0 || i ==1) " class="col-title-value-button">
+              {{colvalue.value  |translate}}
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+  <!-- <div class="rowOutro">
+
+    <div class="colOutro">
+
+      <img [src]=LogoImageUrl  class="logoImage" alt="logoImage">
+      <div class="OutroContainer">
+        {{'OUTRO' | translate}}
+      </div>
+
+    </div>
+
+    <div class="ListContainer">
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col col-title" *ngFor="let Title of buttomBarButtonsTitles | keyvalue ; let i = index ;">
+            <div class="col-title-text">{{Title.value  |translate}}</div>
+
+          <div *ngFor="let col of AvaialbleButtomBar |keyvalue ; let j = index ;">
+            <div *ngFor="let colvalue of col.value |keyvalue ; let k = index ;">
+              <div *ngIf="i === j && (i ==2 || i ==3) " class="col-title-value">
+                {{colvalue.value |translate}}
+              </div>
+              <button *ngIf="i === j && (i ==0 || i ==1) " class="col-title-value-button">
+                {{colvalue.value  |translate}}
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</footer>

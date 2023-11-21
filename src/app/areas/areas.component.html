@@ -1,0 +1,53 @@
+<div class="AreaPage">
+
+  <div class="AreaImagePageContainer">
+  <img [src]="AreaImageUrl" [alt]="AreaImageUrl" class="AreaImagePage">
+  </div>
+
+  <div class="AreaImagePageContainerContent">
+    <div class="AreaImagePageContainerContentTitle" [@fadeInAnimation]>
+      {{'AREAPLACE'|translate}}
+    </div>
+
+    <div class="AeraAreaColumnContentDetailes" [@fadeInAnimation]>
+      <mat-icon class="CallIcon" size="15vw">phone</mat-icon>
+      {{'PHONENUMBERS'|translate}}
+    </div>
+    <div class="AeraAreaColumnContentHoursOfOperation" [@fadeInAnimation]>
+      {{'HOURSOFOPERATION'|translate}}
+    </div>
+    <div class="AeraAreaColumnContentDetailes" [@fadeInAnimation]>
+      <mat-icon class="CallIcon" size="15vw">timer</mat-icon>
+      7/24
+    </div>
+
+
+  </div>
+
+  <div class="Dividercontainer"[@fadeInAnimation]>{{'SerivcesIntro3'|translate}}</div>
+
+  <div class="rowX">
+    <div class="move-card CardSizer" *ngFor="let card of Cards">
+      <div class="card-darkner CardSizer">
+
+
+        <div class="image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <div class="bottom-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <img [src]="card.ImageUrl" class="bottom-image CardSizer"  alt="Stacked Image" (mouseenter)="isHovered = true ;" (mouseleave)="card.CardisHovered = false;" >
+          <div class="card-title" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false " [@fadeOutAnimation]="card.CardisHovered ? 'leave' : 'void'"  >{{card.title |translate}}</div>
+          </div>
+          <div class="top-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <img [src]="card.ImageUrl" class="top-image CardSizer" alt="Card image cap" [@CardAnimation]="card.CardisHovered ?'hover':'void'" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+          <div class="card-text-content" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false "[@CardTextAnimation]="card.CardisHovered ? 'hover' : 'void'">
+            {{card.content|translate}}
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</div>

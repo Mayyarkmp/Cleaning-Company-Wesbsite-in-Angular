@@ -1,0 +1,54 @@
+<div class="Everything">
+  <div class="img-darkner">
+  <img src="\assets\Images\cleaned-house2.jpg" class="background-image-container" alt="Image">
+
+  </div>
+    <div class="ServicesContainerContentPage">
+    <div class="text-container" [@fadeInAnimation]>{{'Our Cleaning Services' |translate}}</div>
+    <div class="text2"[@fadeInAnimation]>{{'We Offer a Wide Variety of Cleaning Services'|translate}} </div>
+  </div>
+        <div class="Dividercontainer"[@fadeInAnimation]>{{'SerivcesIntro3'|translate}}</div>
+
+        <div class="rowX">
+          <div class="move-card CardSizer" *ngFor="let card of Cards">
+            <div class="card-darkner CardSizer">
+
+
+              <div class="image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+                <div class="bottom-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+                <img [src]="card.ImageUrl" class="bottom-image CardSizer"  alt="Stacked Image" (mouseenter)="isHovered = true ;" (mouseleave)="card.CardisHovered = false;" >
+                <div class="card-title" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false " [@fadeOutAnimation]="card.CardisHovered ? 'leave' : 'void'"  >{{card.title |translate}}</div>
+                </div>
+                <div class="top-image-container CardSizer" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+                <img [src]="card.ImageUrl" class="top-image CardSizer" alt="Card image cap" [@CardAnimation]="card.CardisHovered ?'hover':'void'" (mouseenter)="card.CardisHovered = true ;" (mouseleave)="card.CardisHovered = false;">
+                <div class="card-text-content" (mouseenter)="card.CardisHovered = true " (mouseleave)="card.CardisHovered=false "[@CardTextAnimation]="card.CardisHovered ? 'hover' : 'void'">
+                  {{card.content|translate}}
+                </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+  <div class = "Offers" >
+    <div class="LogoCicle">
+      <img [src]="imageUrlSmall" class="logoImage" alt="Sample Image">
+      </div>
+      <div class="OfferContainerTitle"[@fadeInAnimation]>{{'OFFERS'|translate}}</div>
+      <div class="OfferContainerContent text-break" [@fadeInAnimation]>
+      {{'OFFERSCONTENT' | translate}}
+      </div>
+    <div class="EmailContainer" [@fadeInAnimation]>
+      FeWo-Clean4U.com
+    </div>
+
+  </div>
+
+
+</div>
+
+

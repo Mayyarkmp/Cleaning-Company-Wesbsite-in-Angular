@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@font-face {
+  font-family: "EBGaramond-VariableFont_wght";
+  src: url("./assets/Fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "EBGaramond-VariableFont_wght";
+  src: url("./assets/Fonts/EBGaramond-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "SometypeMono-VariableFont";
+  src: url("./assets/Fonts/SometypeMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("./assets/Fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "Anton";
+  src: url("./assets/Fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "FjallaOne-Regular";
+  src: url("./assets/Fonts/FjallaOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald-VariableFont_wght";
+  src: url("./assets/Fonts/Oswald-VariableFont_wght.ttf");
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

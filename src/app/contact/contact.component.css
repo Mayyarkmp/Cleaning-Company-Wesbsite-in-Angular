@@ -1,0 +1,319 @@
+
+@media (max-width: 576px) {
+
+  .ImageContainer{
+
+    height: 170em;
+    }
+    .CardSizer
+  {
+    width: 20em;
+    height:30em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:14em;
+
+  }
+  .AreaImageSizer{
+    width: 20em;
+    height: 20em;
+  }
+  .ContentFontSize
+  {
+    font-size: 1.5em;
+  }
+ }
+ @media (max-width: 400px) {
+
+  .ImageContainer{
+
+    height: 180em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:12em;
+
+  }
+  .AreaImageSizer{
+    width: 15em;
+    height: 15em;
+  }
+  .ContentFontSize
+  {
+    font-size: 1.3em;
+  }
+
+ }
+ @media (max-width: 320px) {
+
+  .ImageContainer{
+
+    height: 200em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:10em;
+
+  }
+  .AreaImageSizer{
+    width: 10em;
+    height: 10em;
+    /* border-left: 3px solid whitesmoke; */
+  }
+  .ContentFontSize
+  {
+    font-size: 1em;
+  }
+
+}
+@media (min-width: 576px) {
+
+  .ImageContainer{
+
+    height: 130em;
+    }
+    .CardSizer
+    {
+      width: 23em;
+      height: 32em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:20em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .ContentFontSize
+    {
+      font-size: 2em;
+    }
+ }
+
+
+@media (min-width: 768px) {
+  .ImageContainer{
+
+    height: 110em;
+    }
+    .CardSizer
+    {
+      width: 25em;
+      height: 35em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:30em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .ContentFontSize
+    {
+      font-size: 2em;
+    }
+ }
+
+
+@media (min-width: 992px) {
+
+  .ImageContainer{
+
+    height: 100em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:40em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .ContentFontSize
+    {
+      font-size: 2em;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+  .ImageContainer{
+
+    height: 90em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:50em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+    .ContentFontSize
+    {
+      font-size: 2em;
+    }
+ }
+
+
+@media (min-width: 1400px) {
+  .ImageContainer{
+
+    height: 80em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+      {
+
+      height:50em;
+
+      }
+      .AreaImageSizer{
+        width: 25em;
+        height: 25em;
+      }
+      .ContentFontSize
+        {
+          font-size: 2em;
+        }
+
+ }
+
+.ContactPage
+{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.ContactPageImageContainer
+{
+  position: relative;
+  width: 100%;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.ContactPageImage
+{
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+}
+.ContactPageImageContainerContentColumn
+{
+  position:absolute;
+  width: 100%;
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.ContactUsContent
+{
+  font-family: "FjallaOne-Regular";
+  font-size: 3em;
+  text-align: center;
+  color: whitesmoke;
+
+}
+.CallUsContainer
+{
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 2px solid  #8BC53F;
+
+}
+.CallUsContainer:hover
+{
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-radius: 2em;
+  border: 2px solid  #8BC53F;
+  background-color: #2A66B0;
+
+}
+
+.CallUsContainerContent
+{
+
+  font-family: "FjallaOne-Regular";
+
+  text-align: center;
+  color: whitesmoke;
+  line-height: 1.5;
+  padding-top: .1em;
+  padding-bottom: .1em;
+}
+.FaceBookIcon{
+  color: whitesmoke;
+}

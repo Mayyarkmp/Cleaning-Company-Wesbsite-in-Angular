@@ -1,0 +1,388 @@
+
+@media (max-width: 576px) {
+
+  .ImageContainer{
+
+    height: 170em;
+    }
+    .CardSizer
+  {
+    width: 20em;
+    height:30em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:14em;
+
+  }
+  .AreaImageSizer{
+    width: 20em;
+    height: 20em;
+  }
+
+ }
+ @media (max-width: 400px) {
+
+  .ImageContainer{
+
+    height: 180em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:12em;
+
+  }
+  .AreaImageSizer{
+    width: 15em;
+    height: 15em;
+  }
+
+ }
+ @media (max-width: 320px) {
+
+  .ImageContainer{
+
+    height: 200em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:10em;
+
+  }
+  .AreaImageSizer{
+    width: 10em;
+    height: 10em;
+    /* border-left: 3px solid whitesmoke; */
+  }
+
+}
+@media (min-width: 576px) {
+
+  .ImageContainer{
+
+    height: 130em;
+    }
+    .CardSizer
+    {
+      width: 23em;
+      height: 32em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:20em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 768px) {
+  .ImageContainer{
+
+    height: 110em;
+    }
+    .CardSizer
+    {
+      width: 25em;
+      height: 35em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:30em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 992px) {
+
+  .ImageContainer{
+
+    height: 100em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:40em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+  .ImageContainer{
+
+    height: 90em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:50em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 1400px) {
+  .ImageContainer{
+
+    height: 80em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+      {
+
+      height:50em;
+
+      }
+      .AreaImageSizer{
+        width: 25em;
+        height: 25em;
+      }
+ }
+
+.AreaPage
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.AreaImagePageContainer
+{
+  position: relative;
+  width: 100%;
+  height: 50em;
+  background-color: black;
+}
+.AreaImagePage
+{
+
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+
+}
+.AreaImagePageContainerContent
+{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50em;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  z-index: 2;
+  text-align: center;
+}
+
+.AreaImagePageContainerContentTitle
+{
+  font-family: "FjallaOne-Regular";
+  font-size: 2rem;
+  line-height: 1.3;
+  color:whitesmoke;
+}
+.AeraAreaColumnContentTitle
+{
+  font-family: "FjallaOne-Regular";
+  font-size: 2.5em;
+  color:whitesmoke;
+}
+.AeraAreaColumnContentDetailes
+{
+  margin-top: 1em;
+  font-family: "FjallaOne-Regular";
+  font-size: 1.5em;
+  color:whitesmoke;
+}
+.AeraAreaColumnContentHoursOfOperation
+{
+  margin-top: 1em;
+  font-family: "FjallaOne-Regular";
+  font-size: 1.9em;
+  color:whitesmoke;
+}
+.CallIcon
+{
+  padding-top: .2em;
+
+  color: whitesmoke;
+}
+.Dividercontainer
+{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Anton";
+  font-size: 5rem;
+  line-height: 1.3;
+  color:whitesmoke;
+  position: relative;
+  background-color: #2A66B0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  height: fit-content;
+}
+.move-card{
+  /* margin-bottom: 1em; */
+  border-radius: 1em;
+  position: relative;
+
+
+
+}
+.card-darkner{
+
+  /* margin: 1em; */
+  border-radius: 1vw;
+  background-color: black;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.image-container{
+
+  border-radius: 1vw;
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+
+}
+.bottom-image-container
+{
+  border-radius: 1vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+}
+.bottom-image {
+  border-radius: 1vw;
+  opacity: 0.5;
+}
+.card-title{
+  position: absolute;
+
+  color: white;
+  font-family: "FjallaOne-Regular";
+  justify-content: center;
+  text-align: center;
+  /* left: 10px; */
+  top: 40%;
+  font-size: 2em;
+  line-height: 1.3;
+  /* line-break: 1023px; */
+}
+.top-image-container
+{
+  border-radius: 1vw;
+  position: relative;
+  /* position: absolute; */
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+
+
+
+}
+.top-image {
+  opacity: .3;
+  border-radius: 1vw;
+  filter: blur(2px);
+  z-index: 1;
+}
+.card-text-content
+{
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  color :whitesmoke ;
+  font-family: "FjallaOne-Regular";
+  font-size: 1.5em;
+  line-height: 1.1;
+
+
+
+}
+.rowX
+{
+  flex-direction: row;
+  background-color: transparent;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: center; */
+  /* text-align: center; */
+  gap: 3em;
+  margin-bottom: 3em;
+  flex-wrap: wrap;
+  align-content: center;
+
+}

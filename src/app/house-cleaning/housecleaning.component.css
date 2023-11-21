@@ -1,0 +1,387 @@
+.WholePage
+{
+  background-color: transparent;
+  /* position: relative; */
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  /* overflow:scroll ; */
+}
+
+.housecleaingimgContainer
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+  height: fit-content;
+}
+.housecleaningimg
+{
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  opacity: .5;
+}
+.housecleaingimgTextContainer
+{
+  position: absolute;
+  width: 100%;
+  height:  50rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: transparent;
+  z-index: 2;
+}
+.housecleaningpagetitle{
+  /* position: absolute; */
+  position: relative;
+  text-align: center;
+
+  font-family: "Anton-Regular";
+  font-size: 4rem;
+  line-height: 1.3;
+  color:whitesmoke;
+}
+.housecleaningpageDetails {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-family: "FjallaOne-Regular";
+  font-size: 2rem;
+  line-height: 1.3;
+  color:whitesmoke;
+}
+.housecleaningpageDetails div:last-child{
+  margin-top: 3em;
+
+  font-family: "FjallaOne-Regular";
+  font-size: 2rem;
+  color:whitesmoke;
+
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.housecleaningpagedivider{
+
+  margin-top:1em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  width: 100%;
+  height: fit-content;
+  padding:  1em;
+  font-family: "FjallaOne-Regular";
+  font-size: 3em;
+  color:whitesmoke;
+  text-align: center;
+  background-color: #2A66B0;
+}
+.housecleaningpagedividerAccrdionColumnList
+{
+  padding:  1em;
+  margin-bottom: 3em;
+
+  color:#2A66B0;
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  align-items: center;
+  /* text-align: center; */
+
+
+}
+.AccrodionListTitle
+{
+  padding:  1em;
+  line-height: 1.5;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  font-family: "FjallaOne-Regular";
+  font-size: 2rem;
+  background-color: #2A66B0;
+  color: whitesmoke;
+  width: 75%;
+  height: 100%;
+  text-align: center;
+}
+.accrodionheaderbuttonlist{
+
+  /* display: block; */
+  width: 100%;
+  margin-top: .2em;
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  text-align: start;
+  font-family: "FjallaOne-Regular";
+  color: #2A66B0;
+  font-size: 1.5rem;
+}
+.accrodionheaderbuttonContent{
+  margin-top: .2em;
+  border: none;
+  width: 100%;
+  text-align: start;
+  font-family: "OpenSans-VariableFont_wdth,wght";
+  color: #333131;
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+.accordion-header{
+  margin: 0px;
+  padding: 1rem;
+}
+.accrdionBootstrap
+{
+  width: 75%;
+}
+.accordion-item{
+  background-color: whitesmoke;
+}
+.rotate {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+.text-toogle[aria-expanded=false] .text-expanded {
+  display: none;
+}
+.text-toogle[aria-expanded=true] .text-collapsed {
+  display: none;
+}
+.card
+{
+  margin-top: 1.5em;
+  overflow-x: visible;
+}
+.carouselHeader{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  color:#2A66B0;
+  font-family: "FjallaOne-Regular";
+  font-size: 5em;
+  line-height: 1.5;
+
+}
+
+.carouselImage
+{
+  width:100%;
+}
+@media (max-width: 576px) {
+  .carouselHeaderTitle{
+    font-size: 4em;
+    line-height: 1.4;
+  }
+
+  .ImageContainer{
+
+    height: 170em;
+    }
+    .CardSizer
+  {
+    width: 20em;
+    height:30em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:14em;
+
+  }
+  .AreaImageSizer{
+    width: 20em;
+    height: 20em;
+  }
+
+ }
+ @media (max-width: 400px) {
+  .carouselHeaderTitle{
+    font-size: 3em;
+    line-height: 1.4;
+  }
+
+  .ImageContainer{
+
+    height: 180em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:12em;
+
+  }
+  .AreaImageSizer{
+    width: 15em;
+    height: 15em;
+  }
+
+ }
+ @media (max-width: 320px) {
+
+  .ImageContainer{
+
+    height: 200em;
+    }
+    .CardSizer
+  {
+    width: 15em;
+    height:25em;
+  }
+  .carouselContainerImageSizer
+  {
+
+  height:10em;
+
+  }
+  .AreaImageSizer{
+    width: 10em;
+    height: 10em;
+    /* border-left: 3px solid whitesmoke; */
+  }
+
+}
+@media (min-width: 576px) {
+
+  .ImageContainer{
+
+    height: 130em;
+    }
+    .CardSizer
+    {
+      width: 23em;
+      height: 32em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:20em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 768px) {
+  .ImageContainer{
+
+    height: 110em;
+    }
+    .CardSizer
+    {
+      width: 25em;
+      height: 35em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:30em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 992px) {
+
+  .ImageContainer{
+
+    height: 100em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:40em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 1200px) {
+  .ImageContainer{
+
+    height: 90em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+    {
+
+    height:50em;
+
+    }
+    .AreaImageSizer{
+      width: 25em;
+      height: 25em;
+    }
+ }
+
+
+@media (min-width: 1400px) {
+  .ImageContainer{
+
+    height: 80em;
+    }
+    .CardSizer
+    {
+      width: 27em;
+      height: 27em;
+    }
+    .carouselContainerImageSizer
+      {
+
+      height:50em;
+
+      }
+      .AreaImageSizer{
+        width: 25em;
+        height: 25em;
+      }
+ }

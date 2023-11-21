@@ -1,0 +1,114 @@
+<div class="WholePage">
+
+  <div class="housecleaingimgContainer">
+    <img src="/assets/Master3.jpg" alt="housecleaningImageUrl" class="housecleaningimg">
+
+  </div>
+  <div class="housecleaingimgTextContainer">
+    <div class="housecleaningpagetitle">
+      {{'Building Maintenance'|translate}}
+    </div>
+
+    <div class="housecleaningpageDetails">
+      <div>
+        {{'Profesional Maintenance Services That Cover The Whole Building'|translate}}
+      </div>
+      <div>
+        {{'Call us' |translate}}
+      </div>
+    </div>
+  </div>
+
+  <div class="housecleaningpagedivider">
+    <div class="line">{{'Our Building Maintenance Services Include'|translate}}</div>
+  </div>
+
+  <div class="housecleaningpagedividerAccrdionColumnList">
+    <div class="AccrodionListTitle"> {{'Extended Building Maintenance Checklist'|translate}}</div>
+    <div class="accordion accordion-flush accrdionBootstrap" id="accordionPanelsStayOpenExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+
+          <button class="collapsed accrodionheaderbuttonlist text-toogle" type="button" data-bs-toggle="collapse"  data-bs-target="#panelsStayOpen-collapseOne"  aria-expanded="false" aria-controls="panelsStayOpen-collapseOne" (click)="collapsed1 = !collapsed1">
+            <i class="bi bi-chevron-right text-collapsed" ></i>
+            <i class="bi bi-chevron-up text-expanded" ></i>
+            {{title1|translate}}
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse accrodionheaderDivContent  collapse" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body accrodionheaderbuttonContent">
+            {{content1|translate}}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="collapsed accrodionheaderbuttonlist text-toogle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" (click)="collapsed2 = !collapsed2">
+            <i  class="bi bi-chevron-right text-collapsed"></i>
+            <i  class="bi bi-chevron-up text-expanded"></i>
+            {{title2|translate}}
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse accrodionheaderDivContent  collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body accrodionheaderbuttonContent">
+            {{content2|translate}}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="collapsed accrodionheaderbuttonlist text-toogle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" (click)="collapsed3 = !collapsed3">
+            <i  class="bi bi-chevron-right text-collapsed"></i>
+            <i  class="bi bi-chevron-up text-expanded"></i>
+            {{title3|translate}}
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse accrodionheaderDivContent  collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body accrodionheaderbuttonContent">
+            {{content3|translate}}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="collapsed accrodionheaderbuttonlist text-toogle" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" (click)="collapsed4 = !collapsed4">
+            <i  class="bi bi-chevron-right text-collapsed"></i>
+            <i  class="bi bi-chevron-up text-expanded"></i>
+            {{title4|translate}}
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse accrodionheaderDivContent  collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body accrodionheaderbuttonContent">
+            {{content4|translate}}
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="card">
+      <p-carousel [value]="CarouselCard" [numVisible]="1" [numScroll]="1" [circular]="true">
+        <ng-template pTemplate="header" >
+          <div class="carouselHeader carouselHeaderTitle" [@fadeInAnimation]>{{'FEWOGALLARY'|translate}}</div>
+          </ng-template>
+          <ng-template let-Card pTemplate="item">
+              <div class="product-item">
+                  <div class="product-item-content">
+                      <div class="mb-3">
+                          <img [src] ="Card.ImageUrl" [@fadeInAnimation]  [alt]="Card.ImageUrl" class="product-image carouselImage carouselContainerImageSizer" />
+                      </div>
+                  </div>
+              </div>
+          </ng-template>
+
+      </p-carousel>
+    </div>
+
+</div>
+
+

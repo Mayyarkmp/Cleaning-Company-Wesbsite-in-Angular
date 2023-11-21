@@ -1,0 +1,90 @@
+<mat-toolbar class="toolbar" *ngIf="isLargeScreen || isMediumScreen">
+  <div class="spacer"></div>
+  <button class="ImageButton" routerLink="HOME" routerLinkActive="true">
+  <img [src]=imageUrl  class="logo-img" alt="logo-image">
+  </button>
+
+  <button  class="toolbarButton" routerLink="HOME" routerLinkActive="true">{{'HOME'|translate}}</button>
+
+  <div class="SerivcesSpeicalContainer" (mouseenter)="isServicesTagOpened = true" (mouseleave)="isServicesTagOpened = false">
+  <button  class="toolbarButton" [routerLink]="['/SERVICES']" routerLinkActive="true" >{{'SERVICES'|translate}}</button>
+
+  <div class="container text-center mat-menu-panel" [hidden]="!isServicesTagOpened">
+    <div class="col">
+      <div class="mat-menu-panel-header"  *ngFor="let catigories of AvailableServicesCatagories | keyvalue ; let i = index ;">
+      <button class="row mat-menu-panel-button" [routerLink]="['/',catigories.value]" routerLinkActive="true">
+        {{catigories.value |translate}}
+      </button>
+      <mat-divider class ="divider"></mat-divider>
+      <div class="" *ngFor="let mapService of AvailableServices | keyvalue ; let j = index ;">
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  </div>
+
+  <button  class="toolbarButton" routerLink="AREAS" routerLinkActive="true">{{'AREAS'|translate}}</button>
+  <!-- <button  class="toolbarButton" >{{'FAQ'|translate}}</button> -->
+  <button  class="toolbarButton" routerLink="CONTACT" routerLinkActive="true" >{{'CONTACT'|translate}}</button>
+
+
+  <!-- <div ngbDropdown class="dropdown LanguageSelect">
+    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-globe-europe-africa LanguageIconSize" >{{lang}}</i>
+    </button>
+    <ul class="dropdown-menu SelectedLanguageOption">
+      <li><button class="dropdown-item SelectedLanguageOptionButton" *ngFor="let language of AvailableLanguages | keyvalue ; let i = index" (click)="onLanguageClicked(i)" >{{language.value}}</button></li>
+    </ul>
+  </div> -->
+
+  <div class="dropdown LanguageSelect">
+    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-globe-europe-africa LanguageIconSize" >{{lang}}</i>
+    </button>
+    <ul class="dropdown-menu SelectedLanguageOption">
+      <li><button class="dropdown-item SelectedLanguageOptionButton" *ngFor="let language of AvailableLanguages | keyvalue ; let i = index" (click)="onLanguageClicked(i)" >{{language.value}}</button></li>
+    </ul>
+  </div>
+  <div class="spacer"></div>
+
+</mat-toolbar>
+
+
+<mat-toolbar class="toolbarSmall" *ngIf="isSmallScreen">
+
+  <button mat-icon-button class ="menuBarToggleButton" (click)="isMenuButtonClicked()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+
+
+  <img [src]=imageUrlSmall  class="logo-imgSmall" alt="logo-image">
+
+  <div ngbDropdown class="dropdown LanguageSelect">
+    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-globe-europe-africa LanguageIconSize" >{{lang}}</i>
+    </button>
+    <ul class="dropdown-menu SelectedLanguageOption">
+      <li><button class="dropdown-item SelectedLanguageOptionButton" *ngFor="let language of AvailableLanguages | keyvalue ; let i = index" (click)="onLanguageClicked(i)" >{{language.value}}</button></li>
+    </ul>
+
+
+
+  </div>
+</mat-toolbar>
+<div class="container container-fluid text-center menuBarSmall" *ngIf="isMenuIconButtonSmallScreenClicked && isSmallScreen">
+  <div class="col align-items-start menuBarSmallColumn">
+    <div class="row menuabarItemSmallRow" *ngFor="let menuOption of ToolBarButtons | keyvalue ; let i = index">
+      <button  class="menuabarItemSmall" [routerLink]="['/',menuOption.value]" routerLinkActive="true">
+        {{menuOption.value | translate}}
+      </button>
+      <!-- <mat-divider class="menuDivider"></mat-divider> -->
+    </div>
+  </div>
+</div>
+
+
+
